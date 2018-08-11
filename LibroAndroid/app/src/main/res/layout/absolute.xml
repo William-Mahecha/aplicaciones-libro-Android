@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextView01"
+        android:text="Un campo"
+        android:layout_x="1dp"
+        android:layout_y="0dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditText01"
+        android:text=""
+        android:layout_x="1dp"
+        android:layout_y="17dp"
+        android:background="@android:drawable/editbox_background"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Button02"
+        android:text="OK"
+        android:layout_x="276dp"
+        android:layout_y="62dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCELAR"
+        android:id="@+id/Button01"
+        android:layout_x="202dp"
+        android:layout_y="62dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="4dp"
+        android:layout_y="116dp"
+        android:id="@+id/TextView02"
+        android:text="Otro campo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditText02"
+        android:text=""
+        android:layout_y="106dp"
+        android:layout_x="94dp"
+        android:background="@android:drawable/editbox_background"/>
+</AbsoluteLayout>

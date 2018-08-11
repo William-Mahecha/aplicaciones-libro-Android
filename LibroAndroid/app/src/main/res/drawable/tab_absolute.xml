@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Cuando este seleccionado -->
+    <item android:drawable="@drawable/tab_absolute_selected" android:state_selected="true"/>
+
+    <!--Cuando no este seleccionado -->
+    <item android:drawable="@drawable/tab_absolute_not_selected"/>
+</selector>

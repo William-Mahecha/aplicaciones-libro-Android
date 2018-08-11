@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LibroAndroid</string>
+    <string-array name="REYES_GODOS">
+        <item>Recaredo (586-601)</item>
+        <item>Liuva II (601-603)</item>
+        <item>Witerico (603-610)</item>
+        <item>Gundemarco (610-612)</item>
+        <item>Sisebuto (612-601)</item>
+        <item>Recaredo II (621)</item>
+        <item>Suinthila (621-631)</item>
+        <item>Sisenado (631-636)</item>
+    </string-array>
+</resources>
