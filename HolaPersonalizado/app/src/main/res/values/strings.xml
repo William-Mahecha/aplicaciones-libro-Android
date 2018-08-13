@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">HolaPersonalizado</string>
+    <string name="app_name">Hola Personalizado</string>
+    <string name="hello">Hola</string>
+    <string name="nombre">¿Cual es tu nombre?</string>
+    <string name="saludoSr">Señor</string>
+    <string name="saludoSra">Señora</string>
+    <string name="saludo">Saludo</string>
+    <string name="tiempo">Mostrar hora</string>
 </resources>
