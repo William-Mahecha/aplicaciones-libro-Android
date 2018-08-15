@@ -6,4 +6,5 @@
     <string name="saludoSra">Señora</string>
     <string name="saludo">Saludo</string>
     <string name="tiempo">Mostrar hora</string>
+    <string name="noNameMsg">No se ha introducido el Nombre</string>
 </resources>

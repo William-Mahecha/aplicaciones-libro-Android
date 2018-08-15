@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Flip</string>
+    <string name="startPlay">Jugar</string>
+    <string name="menu_player">Jugador</string>
+    <string name="menu_howto">Ayuda</string>
+    <string name="menu_about">Acerca de</string>
+    <string name="titulo_about">Acerca de Flip</string>
+    <string name="titulo_howto">Como jugar Flip</string>
+
+    <string name="radioColor">Colores</string>
+    <string name="radioNumero">Números</string>
+    <string name="check_sound">Sonido</string>
+    <string name="check_vibrate">Vibracion</string>
+    <string name="fin_juego_tiempo">Se finalizo el juego con un total de</string>
+    <string name="fin_juego_pulsaciones">Pulsaciones</string>
+
+    <string name="num_elem_x">Número de elementos en el eje X</string>
+    <string name="num_elem_y">Número de elementos en el eje Y</string>
+    <string name="num_colores">Número de tramas</string>
+    <string name="score_clicks">Pulsaciones:</string>
+    <string name="score_time">Tiempo:</string>
+
+</resources>

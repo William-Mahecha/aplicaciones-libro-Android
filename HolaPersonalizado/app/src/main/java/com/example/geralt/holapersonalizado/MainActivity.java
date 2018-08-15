@@ -1,5 +1,8 @@
 package com.example.geralt.holapersonalizado;
 
+import android.content.Context;
+import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +14,7 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
 
                 //Codigo a ejecutar cuando sea pulsado
                 EditText editText = findViewById(R.id.editNombre);
+                if ("".equals(editText.getText().toString().trim())){
+                    //Mostrar el dialogo
+                    //showAlert();
+                    //Mostrar toast
+                    showToast();
+                    return;
+                }
+
                 String nombre = editText.getText().toString();
                 String saludo = null;
 
@@ -53,9 +65,15 @@ public class MainActivity extends AppCompatActivity {
                     saludo += " " + dateToShow;
                 }
                 //Salida del saludo
-                TextView salida = findViewById(R.id.salida);
+                /* TextView salida = findViewById(R.id.salida);
                 salida.setText(saludo);
+                */
+
+                Intent intent = new Intent(MainActivity.this, Saludation.class);
+                intent.putExtra("saludo", saludo);
+                startActivity(intent);
             }
+
         });
 
         //Mostrar o no las fechas
@@ -71,4 +89,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    protected void showToast() {
+        Context context = getApplicationContext();
+        CharSequence text = getResources().getString(R.string.noNameMsg);
+        int duracion = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duracion);
+        toast.show();
+
+        //Para que el codigo quede mas compacto
+        // Toast.makeText(getApplicationContext(),getResources().getString(R.string.noNameMsg), Toast.LENGTH_SHORT).show();
+    }
+
+    protected void showAlert() {
+        CharSequence text = getResources().getString(R.string.noNameMsg);
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setMessage(text);
+        alert.setPositiveButton(android.R.string.ok, null);
+        alert.show();
+
+        //Para que el codigo quede mas compacto
+        // new AlertDialog.Builder(this).setMessage(getResources().getString(R.string.noNameMsg)).setPositiveButton(android.R.string.ok, null).show();
+    }
+
+
 }
