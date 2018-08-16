@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Vibrator;
+import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Chronometer;
@@ -14,8 +15,8 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-public class GameField extends Activity{
-    private static final int []colores = new int[]{
+public class GameField extends Activity {
+    private static final int []colors = new int[]{
             R.drawable.ic_1c,
             R.drawable.ic_2c,
             R.drawable.ic_3c,
@@ -24,7 +25,7 @@ public class GameField extends Activity{
             R.drawable.ic_6c
     };
 
-    private static final int []numeros = new int[]{
+    private static final int []numbers = new int[]{
             R.drawable.ic_1n,
             R.drawable.ic_2n,
             R.drawable.ic_3n,
@@ -60,7 +61,7 @@ public class GameField extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gamefield);
-        vibratorService = (Vibrator) getSystemService(Service.VIBRATOR_SERVICE);
+        vibratorService = (Vibrator) (getSystemService(Service.VIBRATOR_SERVICE));
 
         mp = MediaPlayer.create(this, R.raw.touch);
         tvNumeroClicks = findViewById(R.id.clicksTxt);
@@ -69,14 +70,14 @@ public class GameField extends Activity{
         Bundle extras = getIntent().getExtras();
         topTileX = extras.getInt("xtiles") +3;
         topTileY = extras.getInt("ytiles") +3;
-        topElements = extras.getInt("numColores") + 2;
+        topElements = extras.getInt("numcolors") + 2;
 
         //Usa colores o numeros
-        if ("C".equals(extras.getString("numColores") + 2)){
-            pictures = colores;
+        if ("C".equals(extras.getString("tile"))){
+            pictures = colors;
         }
         else{
-            pictures = numeros;
+            pictures = numbers;
         }
         hasSound = extras.getBoolean("hasSound");
         hasVibration = extras.getBoolean("hasVibration");

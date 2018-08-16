@@ -10,53 +10,49 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtCeldasX"/>
-
+        android:id="@+id/seekBarXtxt"/>
     <SeekBar
-        android:id="@+id/celdasX"
+        android:id="@+id/seekBarX"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:max="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarYtxt"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarY"
         android:max="6"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtCeldasY"/>
-
+        android:id="@+id/seekBarColorstxt"/>
     <SeekBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/celdasY"
-        android:max="6"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtCeldasColor"/>
-
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/celdasColor"
-        android:max="5"/>
+        android:id="@+id/seekBarColors"
+        android:max="4"/>
 
     <!-- Contenido -->
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/radioGroup">
+        android:id="@+id/radioGroup1">
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/radioButtonC"
-            android:text="@string/radioColor"/>
-
+            android:text="@string/radio_color"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/radioButtonN"
-            android:text="@string/radioNumero"
+            android:text="@string/radio_numero"
             android:checked="true"/>
     </RadioGroup>
 

@@ -3,7 +3,7 @@ package com.example.geralt.flip;
 import android.content.Context;
 import android.widget.Button;
 
-public class TileView extends Button {
+public class TileView extends android.support.v7.widget.AppCompatButton {
     //Coordenas
     public int x = 0;
     public int y = 0;
