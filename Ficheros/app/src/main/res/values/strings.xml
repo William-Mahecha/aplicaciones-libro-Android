@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ficheros</string>
+    <string name="app_name_ext">Ficheros Externos</string>
+    <string name="app_name_res">Ficheros Recurso</string>
+    <string name="load">Cargar</string>
+    <string name="save">Guardar</string>
+    <string name="filename">Nombre del ficheros</string>
+
+</resources>

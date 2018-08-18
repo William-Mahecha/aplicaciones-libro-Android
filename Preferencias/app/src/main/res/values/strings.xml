@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Preferencias</string>
+    <!-- layout -->
+    <string name="block_name">Nombre de bloque</string>
+    <string name="key">Clave</string>
+    <string name="value">Valor</string>
+    <string name="save">Salvar</string>
+    <string name="retrieve">Recuperar</string>
+
+    <!-- Alertas -->
+    <string name="no_key">No se ha introducido una clave</string>
+    <string name="no_value">No se ha introducido un valor</string>
+    <string name="default_value">No existe ese valor</string>
+</resources>
