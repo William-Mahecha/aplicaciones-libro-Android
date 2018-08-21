@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lista de la compra</string>
+    <string name="price">Precio</string>
+    <string name="place">Lugar</string>
+    <string name="importance">Importancia</string>
+    <string name="save">Guardar</string>
+    <string name="identificador">Identificador</string>
+    <string name="element">Elemento</string>
+    <string name="newItem">Nuevo elemento</string>
+    <string name="pendiente">Compra pendiente</string>
+    <string name="lstNoElements">No hay nada que comprar</string>
+    <string name="deleteItem">Eliminar elemento</string>
+    <string name="editItem">Editar elementos</string>
+    <string name="alrtDelete">Eliminar elemeto</string>
+    <string name="alrtDeleteEntry">Se va a eliminar un elemento. ¿Esta seguro?</string>
+</resources>

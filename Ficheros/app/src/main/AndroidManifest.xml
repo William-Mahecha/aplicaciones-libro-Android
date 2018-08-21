@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.geralt.ficheros">
 
     <application
@@ -9,27 +10,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="ExternalFile"
-            android:icon="@drawable/icon_text"
-            android:label="@string/app_name_ext"
-            android:taskAffinity="com.example.geralt.ExternalFile">
+
+        <activity android:name=".ResourceFile" android:icon="@drawable/ic_launcher_background"
+            android:label="@string/app_name_res" android:taskAffinity="com.example.geralt.ResourceFile">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ExternalFile" android:icon="@drawable/ic_launcher_background"
+            android:label="@string/app_name_ext" android:taskAffinity="com.example.geralt.ExternalFile">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
-        <activity android:name=".ResourceFile"
-            android:label="@string/app_name"
-            android:taskAffinity="com.example.geralt.ResourceFile">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
-        <activity android:name=".ResourceFile"
-            android:label="@string/app_name_res"/>
     </application>
 
 </manifest>
